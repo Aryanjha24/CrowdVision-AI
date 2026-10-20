@@ -1,0 +1,18 @@
+# Enterprise BoT-SORT Tracker Configuration
+# Tuned for Occlusion Handling, Person Tracking, and Camera Motion Compensation
+
+tracker_type: botsort # tracker type, ['botsort', 'bytetrack']
+track_high_thresh: 0.45 # threshold for first association
+track_low_thresh: 0.10 # threshold for second association
+new_track_thresh: 0.50 # threshold for init new track
+track_buffer: 60 # buffer to maintain tracks during occlusion (approx 2.0s at 30fps)
+match_thresh: 0.80 # matching threshold
+fuse_score: True # fuse detection score with motion IoU
+
+# Global Motion Compensation (Camera vibration/panning compensation)
+gmc_method: sparseOptFlow
+
+# ReID & Appearance Features
+proximity_thresh: 0.5
+appearance_thresh: 0.75
+with_reid: False # Lightweight CPU mode

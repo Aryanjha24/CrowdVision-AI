@@ -1,0 +1,23 @@
+# Enterprise AI-Powered Person Tracking & Crowd Analytics
+# Core Requirements
+
+# Computer Vision & Deep Learning
+ultralytics>=8.1.0
+supervision>=0.20.0
+opencv-python>=4.8.0
+torch>=2.1.0
+torchvision>=0.16.0
+
+# Model Optimization & Runtime
+onnx>=1.15.0
+onnxruntime>=1.16.0
+
+# Backend & Database
+SQLAlchemy>=2.0.0
+
+# Frontend & Analytics Dashboard
+streamlit>=1.30.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+numpy>=1.24.0
